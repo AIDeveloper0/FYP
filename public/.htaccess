@@ -1,0 +1,5 @@
+# Prevent SPA fallback for model files
+<FilesMatch "\.(json|safetensors|bin|model)$">
+  # Disable redirects for these file types
+  RewriteEngine Off
+</FilesMatch>

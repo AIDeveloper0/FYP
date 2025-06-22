@@ -1,0 +1,234 @@
+{
+  "test_cases": [
+    {
+      "description": "Simple decision flow",
+      "input": "User login if credentials valid then grant access else show error",
+      "expected_patterns": ["graph TD", "Valid?", "Grant Access", "Error", "Yes", "No"]
+    },
+    {
+      "description": "Payment verification",
+      "input": "Verify payment if payment successful then process order else reject transaction",
+      "expected_patterns": ["graph TD", "Successful?", "Process Order", "Reject", "Yes", "No"]
+    },
+    {
+      "description": "Email verification",
+      "input": "Check email if email exists then send verification code else show registration form",
+      "expected_patterns": ["graph TD", "Exists?", "Verification", "Registration", "Yes", "No"]
+    },
+    {
+      "description": "Data validation",
+      "input": "Validate input if data format correct then process data else show validation error",
+      "expected_patterns": ["graph TD", "Correct?", "Process", "Error", "Yes", "No"]
+    },
+    {
+      "description": "Resource availability check",
+      "input": "Check resources if resources available then allocate resources else queue request",
+      "expected_patterns": ["graph TD", "Available?", "Allocate", "Queue", "Yes", "No"]
+    },
+    {
+      "description": "Account status check",
+      "input": "Check account if account active then allow transaction else notify user to activate",
+      "expected_patterns": ["graph TD", "Active?", "Allow", "Notify", "Yes", "No"]
+    },
+    {
+      "description": "File check",
+      "input": "Examine file if file exists then open file else show file missing error",
+      "expected_patterns": ["graph TD", "Exists?", "Open", "Missing", "Yes", "No"]
+    },
+    {
+      "description": "Connection check",
+      "input": "Test connection if network connected then sync data else store locally",
+      "expected_patterns": ["graph TD", "Connected?", "Sync", "Store", "Yes", "No"]
+    },
+    {
+      "description": "Password strength check",
+      "input": "Validate password if password strong then accept password else request stronger password",
+      "expected_patterns": ["graph TD", "Strong?", "Accept", "Request", "Yes", "No"]
+    },
+    {
+      "description": "Age verification",
+      "input": "Verify age if user over 18 then allow access else show age restriction",
+      "expected_patterns": ["graph TD", "User Over 18?", "Allow", "Restriction", "Yes", "No"]
+    },
+    {
+      "description": "Inventory check",
+      "input": "Check inventory if product in stock then add to cart else show out of stock message",
+      "expected_patterns": ["graph TD", "In Stock?", "Add To Cart", "Out Of Stock", "Yes", "No"]
+    },
+    {
+      "description": "Weather-based decision",
+      "input": "Check weather if raining then move event indoors else continue with outdoor setup",
+      "expected_patterns": ["graph TD", "Raining?", "Indoors", "Outdoor", "Yes", "No"]
+    },
+    {
+      "description": "Basic sequence",
+      "input": "First collect data, then validate input, finally save to database",
+      "expected_patterns": ["graph TD", "Collect Data", "Validate", "Save"]
+    },
+    {
+      "description": "Registration sequence",
+      "input": "Enter user details, validate email, send verification link, activate account",
+      "expected_patterns": ["graph TD", "Enter User", "Validate", "Send", "Activate"]
+    },
+    {
+      "description": "Order processing sequence",
+      "input": "Customer places order, system validates payment, warehouse prepares shipment, courier delivers package",
+      "expected_patterns": ["graph TD", "Customer Places", "Validates Payment", "Warehouse", "Courier"]
+    },
+    {
+      "description": "Support ticket sequence",
+      "input": "Customer reports issue, system creates ticket, agent reviews problem, technician resolves issue, customer confirms resolution",
+      "expected_patterns": ["graph TD", "Reports", "Creates", "Reviews", "Resolves", "Confirms"]
+    },
+    {
+      "description": "Software deployment",
+      "input": "Build code, run tests, deploy to staging, perform QA, deploy to production",
+      "expected_patterns": ["graph TD", "Build", "Tests", "Staging", "QA", "Production"]
+    },
+    {
+      "description": "Recipe steps",
+      "input": "Prepare ingredients, mix batter, pour into pan, bake at 350 degrees, cool before serving",
+      "expected_patterns": ["graph TD", "Prepare", "Mix", "Pour", "Bake", "Cool"]
+    },
+    {
+      "description": "Morning routine",
+      "input": "Wake up, brush teeth, take shower, get dressed, eat breakfast, leave for work",
+      "expected_patterns": ["graph TD", "Wake", "Brush", "Shower", "Dressed", "Breakfast", "Leave"]
+    },
+    {
+      "description": "Email campaign",
+      "input": "Create email content, design template, build recipient list, send campaign, analyze results",
+      "expected_patterns": ["graph TD", "Create", "Design", "Build", "Send", "Analyze"]
+    },
+    {
+      "description": "Nested login verification",
+      "input": "Login process checks username if valid then check password if password correct then grant access else lock account else show username error",
+      "expected_patterns": ["graph TD", "Username", "Valid", "Password", "Correct", "Grant Access", "Lock Account", "Error"]
+    },
+    {
+      "description": "Payment processing with validation",
+      "input": "Order processing system where customer places order if payment successful then validate inventory if items available then ship product else backorder items if payment failed then notify customer",
+      "expected_patterns": ["graph TD", "Order Processing", "Payment", "Successful", "Inventory", "Available", "Ship", "Backorder", "Notify"]
+    },
+    {
+      "description": "File processing with format check",
+      "input": "File processing system checks file type if supported then verify contents if contents valid then process data else log format error if file type not supported then reject file",
+      "expected_patterns": ["graph TD", "File", "Supported", "Contents", "Valid", "Process", "Format Error", "Reject"]
+    },
+    {
+      "description": "User registration with email verification",
+      "input": "Registration system validates email if email valid then check if account exists if account not found then create account else show existing account message if email invalid then show format error",
+      "expected_patterns": ["graph TD", "Email", "Valid", "Account", "Create", "Existing", "Format Error"]
+    },
+    {
+      "description": "Product order with discount",
+      "input": "Order system calculates total if customer is member then check purchase history if frequent buyer then apply special discount else apply standard discount if not a member then use regular pricing",
+      "expected_patterns": ["graph TD", "Member", "Purchase History", "Special Discount", "Standard Discount", "Regular Pricing"]
+    },
+    {
+      "description": "Basic loop",
+      "input": "Repeat checking status until task is complete",
+      "expected_patterns": ["graph TD", "Status", "Complete", "No", "Yes"]
+    },
+    {
+      "description": "Item processing loop",
+      "input": "While there are unprocessed items, process the next item",
+      "expected_patterns": ["graph TD", "Unprocessed Items", "Process", "Next Item", "Yes", "No"]
+    },
+    {
+      "description": "File read loop",
+      "input": "Continue reading file content until end of file is reached",
+      "expected_patterns": ["graph TD", "End Of File", "Reading", "Content", "Yes", "No"]
+    },
+    {
+      "description": "Data validation loop",
+      "input": "Repeat input prompt until user enters valid data",
+      "expected_patterns": ["graph TD", "Valid Data", "Input Prompt", "User Enters", "Yes", "No"]
+    },
+    {
+      "description": "Multiple AND conditions",
+      "input": "Shopping checkout if customer is logged in and has items in cart then proceed to payment else redirect to cart",
+      "expected_patterns": ["graph TD", "Shopping Checkout", "Logged In", "Items", "Proceed", "Redirect"]
+    },
+    {
+      "description": "Multiple OR conditions",
+      "input": "Alert system if temperature too high or pressure exceeds limit then trigger alarm else continue monitoring",
+      "expected_patterns": ["graph TD", "Alert System", "Temperature", "Pressure", "Alarm", "Monitoring"]
+    },
+    {
+      "description": "Basic parallel process",
+      "input": "System simultaneously processes payment and validates inventory",
+      "expected_patterns": ["graph TD", "System", "Payment", "Inventory"]
+    },
+    {
+      "description": "Multiple validations",
+      "input": "Application concurrently validates user credentials and checks system permissions",
+      "expected_patterns": ["graph TD", "Application", "Credentials", "Permissions"]
+    },
+    {
+      "description": "Parallel data processing",
+      "input": "Server processes incoming requests while monitoring system resources",
+      "expected_patterns": ["graph TD", "Server", "Incoming Requests", "System Resources"]
+    },
+    {
+      "description": "Simultaneous operations",
+      "input": "Database performs backup while handling user queries",
+      "expected_patterns": ["graph TD", "Database", "Backup", "User Queries"]
+    },
+    {
+      "description": "Basic error handling",
+      "input": "Data import process checks file format if valid then import data else log error and notify admin",
+      "expected_patterns": ["graph TD", "Data Import", "Valid", "Import Data", "Log Error", "Notify Admin"]
+    },
+    {
+      "description": "Connection error handling",
+      "input": "Network service attempts connection if successful then transfer data else retry connection and log failure",
+      "expected_patterns": ["graph TD", "Network Service", "Connection", "Successful", "Transfer", "Retry", "Log Failure"]
+    },
+    {
+      "description": "Transaction error handling",
+      "input": "Payment processor executes transaction if successful then confirm order else reverse charges and display error",
+      "expected_patterns": ["graph TD", "Payment Processor", "Transaction", "Successful", "Confirm", "Reverse", "Error"]
+    },
+    {
+      "description": "Form validation error handling",
+      "input": "Submit form if all fields valid then process submission else highlight errors and keep form data",
+      "expected_patterns": ["graph TD", "Submit Form", "Fields Valid", "Process", "Highlight Errors", "Form Data"]
+    },
+    {
+      "description": "Real world login flow",
+      "input": "User enters credentials, system validates username and password, if both are correct then generate session token and redirect to dashboard, if username exists but password is wrong then show invalid password message, if username doesn't exist then show user not found error",
+      "expected_patterns": ["graph TD", "Credentials", "Validates", "Correct", "Session", "Dashboard", "Invalid", "Not Found"]
+    },
+    {
+      "description": "E-commerce checkout flow",
+      "input": "Customer adds items to cart, then proceeds to checkout, enters shipping details, selects payment method, if payment approved then complete order and send confirmation email else show payment error",
+      "expected_patterns": ["graph TD", "Items", "Checkout", "Shipping", "Payment", "Approved", "Complete", "Confirmation", "Error"]
+    },
+    {
+      "description": "Software deployment workflow",
+      "input": "Developer commits code, CI system runs tests, if tests pass then build artifact, deploy to staging, conduct UAT, if UAT passes then deploy to production else fix issues and restart process",
+      "expected_patterns": ["graph TD", "Commits", "Tests", "Build", "Staging", "UAT", "Production", "Fix"]
+    },
+    {
+      "description": "Returns processing",
+      "input": "Customer initiates return, system validates return eligibility, if eligible then generate return label, customer ships item, warehouse receives item, if item condition acceptable then process refund else deny return",
+      "expected_patterns": ["graph TD", "Initiates", "Validates", "Eligible", "Return Label", "Ships", "Receives", "Condition", "Refund", "Deny"]
+    },
+    {
+      "description": "Multiple conditions with logical operators",
+      "input": "Flight booking system checks if seats available and date is valid. If both conditions are met, proceed with reservation. Otherwise, show appropriate error message.",
+      "expected_patterns": ["graph TD", "Flight Booking", "Seats Available", "Date Valid", "Proceed", "Error"]
+    },
+    {
+      "description": "Hierarchical process with nested decisions",
+      "input": "Project approval system checks budget. If under threshold, team lead approves. If over threshold but under limit, manager approves. If over limit, executive approval required.",
+      "expected_patterns": ["graph TD", "Project Approval", "Budget", "Threshold", "Team Lead", "Manager", "Executive"]
+    },
+    {
+      "description": "Large documentation process",
+      "input": "Document management process: Author creates draft, peers review document, if changes needed then author revises draft else if approved then editor formats document, quality team performs final check, if passes final check then publish document else return to editor",
+      "expected_patterns": ["graph TD", "Author", "Draft", "Review", "Changes", "Revises", "Editor", "Formats", "Quality", "Final Check", "Publish"]
+    }
+  ]
+}

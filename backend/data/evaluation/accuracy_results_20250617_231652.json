@@ -1,0 +1,84 @@
+{
+  "date": "2025-06-17 23:16:52",
+  "accuracy": 66.22,
+  "metrics": {
+    "overall_accuracy": 66.22,
+    "pattern_accuracy": 65.67,
+    "avg_case_accuracy": 67.51,
+    "total_cases": 10,
+    "total_patterns": 67,
+    "matched_patterns": 44,
+    "case_results": [
+      {
+        "description": "Simple decision flow",
+        "accuracy": 100.0,
+        "matched_patterns": 6,
+        "total_patterns": 6,
+        "output": "graph TD\n    A[\"User Login\"]\n    B{Valid?}\n    C[\"Grant Access\"]\n    D[\"Show Error\"]\n    A --> B\n    B -->|Yes| C\n    B -->|No| D"
+      },
+      {
+        "description": "Sequence flow",
+        "accuracy": 40.0,
+        "matched_patterns": 2,
+        "total_patterns": 5,
+        "output": "graph TD\n    A[Error Processing Input]\n    B[Please Check Your Text]\n    A --> B"
+      },
+      {
+        "description": "Complex business process",
+        "accuracy": 14.29,
+        "matched_patterns": 1,
+        "total_patterns": 7,
+        "output": "graph TD\n    A[Error Processing Input]\n    B[Please Check Your Text]\n    A --> B"
+      },
+      {
+        "description": "Loop pattern",
+        "accuracy": 100.0,
+        "matched_patterns": 5,
+        "total_patterns": 5,
+        "output": "graph TD\n    A[\"Start\"]\n    B[\"Checking Status\"]\n    C{Complete?}\n    A --> B\n    B --> C\n    C -->|No| B\n    C -->|Yes| A"
+      },
+      {
+        "description": "Parallel processes",
+        "accuracy": 100.0,
+        "matched_patterns": 4,
+        "total_patterns": 4,
+        "output": "graph TD\n    A[\"System Simultaneously\"]\n    C[\"Processes Payment\"]\n    A --> C\n    D[\"Validates Inventory\"]\n    A --> D\n    B[\"Complete\"]\n    C --> B\n    D --> B"
+      },
+      {
+        "description": "Multiple conditions with AND",
+        "accuracy": 87.5,
+        "matched_patterns": 7,
+        "total_patterns": 8,
+        "output": "graph TD\n    A[\"Shopping Checkout\"]\n    B{Customer Is & Has Items?}\n    C[\"Proceed To Payment\"]\n    D[\"Redirect To Cart\"]\n    A --> B\n    B -->|Yes| C\n    B -->|No| D"
+      },
+      {
+        "description": "Process with error handling",
+        "accuracy": 100.0,
+        "matched_patterns": 8,
+        "total_patterns": 8,
+        "output": "graph TD\n    A[\"Data Import Process Checks File Format\"]\n    B{Valid?}\n    C[\"Import Data\"]\n    D[\"Log Error And Notify Admin\"]\n    A --> B\n    B -->|Yes| C\n    B -->|No| D"
+      },
+      {
+        "description": "Complex workflow with multiple steps",
+        "accuracy": 11.11,
+        "matched_patterns": 1,
+        "total_patterns": 9,
+        "output": "graph TD\n    A[Error Processing Input]\n    B[Please Check Your Text]\n    A --> B"
+      },
+      {
+        "description": "While loop pattern",
+        "accuracy": 33.33,
+        "matched_patterns": 2,
+        "total_patterns": 6,
+        "output": "graph TD\n    A[Error Processing Input]\n    B[Please Check Your Text]\n    A --> B"
+      },
+      {
+        "description": "Nested decisions",
+        "accuracy": 88.89,
+        "matched_patterns": 8,
+        "total_patterns": 9,
+        "output": "graph TD\n    A[\"Login Process Checks Username\"]\n    B{Valid?}\n    C[\"Check Password If Password Correct Th...\"]\n    D[\"Lock Account Else Show Username Error\"]\n    A --> B\n    B -->|Yes| C\n    B -->|No| D"
+      }
+    ]
+  }
+}

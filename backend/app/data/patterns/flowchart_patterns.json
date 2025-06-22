@@ -1,0 +1,55 @@
+{
+  "decision_patterns": [
+    {
+      "pattern": "(.+?)\\s+if\\s+(.+?)\\s+then\\s+(.+?)\\s+if\\s+(.+?)\\s+then\\s+(.+?)$",
+      "description": "Complex decision with two conditions",
+      "type": "complex_decision"
+    },
+    {
+      "pattern": "(.+?)\\s+if\\s+(.+?)\\s+then\\s+(.+?)\\s+(?:else|otherwise)\\s+(.+?)$",
+      "description": "Standard if-then-else",
+      "type": "decision"
+    },
+    {
+      "pattern": "(.+?)\\s+if\\s+(.+?)\\s+then\\s+(.+?)$",
+      "description": "If-then without else",
+      "type": "decision"
+    },
+    {
+      "pattern": "(.+?)\\s+where\\s+(.+?)\\s+if\\s+(.+?)\\s+then\\s+(.+?)\\s+if\\s+(.+?)\\s+then\\s+(.+)$",
+      "description": "Process with two decision points",
+      "type": "complex_decision"
+    }
+  ],
+  "sequence_patterns": [
+    {
+      "pattern": "(?:first|initially|begin by|starts with|step 1)\\s+(.+?)(?:\\s+(?:then|next|after that|finally|lastly|eventually|step \\d+)\\s+)(.+)",
+      "description": "Explicit sequence steps",
+      "type": "sequence"
+    },
+    {
+      "pattern": "(.+?),\\s+(.+?)(?:,\\s+(.+?))?(?:,\\s+(.+?))?(?:,\\s+(.+?))?",
+      "description": "Comma-separated steps",
+      "type": "sequence"
+    }
+  ],
+  "condition_keywords": {
+    "successful": "Successful?",
+    "valid": "Valid?",
+    "correct": "Correct?",
+    "complete": "Complete?",
+    "approved": "Approved?",
+    "verified": "Verified?",
+    "available": "Available?",
+    "sufficient": "Sufficient?",
+    "authenticated": "Authenticated?",
+    "authorized": "Authorized?",
+    "eligible": "Eligible?",
+    "qualified": "Qualified?",
+    "matching": "Matching?",
+    "paid": "Paid?",
+    "exists": "Exists?",
+    "finished": "Finished?",
+    "passes": "Passes?"
+  }
+}

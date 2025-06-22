@@ -1,0 +1,131 @@
+{
+  "test_cases": [
+    {
+      "description": "Simple decision flow",
+      "input": "User login if credentials valid then grant access else show error",
+      "expected_patterns": [
+        "graph TD",
+        "Valid?",
+        "Grant Access",
+        "Error",
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "description": "Sequence flow",
+      "input": "First collect data, then validate the information, finally save to database",
+      "expected_patterns": [
+        "graph TD",
+        "Collect Data",
+        "Validate",
+        "Save",
+        "-->"
+      ]
+    },
+    {
+      "description": "Complex business process",
+      "input": "Order processing system where customer places order if payment successful then ship product if payment failed then notify customer",
+      "expected_patterns": [
+        "graph TD",
+        "Order Processing",
+        "Payment",
+        "Ship",
+        "Notify",
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "description": "Loop pattern",
+      "input": "Repeat checking status until task is complete",
+      "expected_patterns": [
+        "graph TD",
+        "Checking Status",
+        "Complete",
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "description": "Parallel processes",
+      "input": "System simultaneously processes payment and validates inventory",
+      "expected_patterns": [
+        "graph TD",
+        "System",
+        "Payment",
+        "Inventory"
+      ]
+    },
+    {
+      "description": "Multiple conditions with AND",
+      "input": "Shopping checkout if customer is logged in and has items in cart then proceed to payment else redirect to cart",
+      "expected_patterns": [
+        "graph TD",
+        "Shopping Checkout",
+        "Logged In",
+        "Items",
+        "Proceed",
+        "Redirect",
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "description": "Process with error handling",
+      "input": "Data import process checks file format if valid then import data else log error and notify admin",
+      "expected_patterns": [
+        "graph TD",
+        "Data Import",
+        "Valid",
+        "Import Data",
+        "Log Error",
+        "Notify Admin",
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "description": "Complex workflow with multiple steps",
+      "input": "Ticket processing where agent receives ticket if priority is high then assign immediately and notify manager if priority is low then queue for later processing",
+      "expected_patterns": [
+        "graph TD",
+        "Ticket Processing",
+        "Priority",
+        "High",
+        "Assign",
+        "Notify",
+        "Queue",
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "description": "While loop pattern",
+      "input": "While there are unprocessed items, process the next item",
+      "expected_patterns": [
+        "graph TD",
+        "Unprocessed Items",
+        "Process",
+        "Next Item",
+        "Yes",
+        "No"
+      ]
+    },
+    {
+      "description": "Nested decisions",
+      "input": "Login process checks username if valid then check password if password correct then grant access else lock account else show username error",
+      "expected_patterns": [
+        "graph TD",
+        "Login Process",
+        "Username",
+        "Password",
+        "Grant Access",
+        "Lock Account",
+        "Error",
+        "Yes",
+        "No"
+      ]
+    }
+  ]
+}

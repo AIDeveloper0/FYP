@@ -1,0 +1,84 @@
+{
+  "date": "2025-06-17 23:20:10",
+  "accuracy": 87.64,
+  "metrics": {
+    "overall_accuracy": 87.64,
+    "pattern_accuracy": 88.06,
+    "avg_case_accuracy": 86.67,
+    "total_cases": 10,
+    "total_patterns": 67,
+    "matched_patterns": 59,
+    "case_results": [
+      {
+        "description": "Simple decision flow",
+        "accuracy": 100.0,
+        "matched_patterns": 6,
+        "total_patterns": 6,
+        "output": "graph TD\n    A[\"User Login\"]\n    B{Valid?}\n    C[\"Grant Access\"]\n    D[\"Show Error\"]\n    A --> B\n    B -->|Yes| C\n    B -->|No| D"
+      },
+      {
+        "description": "Sequence flow",
+        "accuracy": 100.0,
+        "matched_patterns": 5,
+        "total_patterns": 5,
+        "output": "graph TD\n    A[\"Collect Data\"]\n    B[\"Validate The Information\"]\n    A --> B\n    C[\"Save To Database\"]\n    B --> C"
+      },
+      {
+        "description": "Complex business process",
+        "accuracy": 100.0,
+        "matched_patterns": 7,
+        "total_patterns": 7,
+        "output": "graph TD\n    A[\"Order Processing System\"]\n    B{Successful?}\n    A --> B\n    C[\"Ship Product\"]\n    B -->|Yes| C\n    D{Payment Successful?}\n    B -->|No| D\n    E[\"Notify Customer\"]\n    D -->|Yes| E\n    F[\"Handle Alternative Failure\"]\n    D -->|No| F"
+      },
+      {
+        "description": "Loop pattern",
+        "accuracy": 100.0,
+        "matched_patterns": 5,
+        "total_patterns": 5,
+        "output": "graph TD\n    A[\"Start\"]\n    B[\"Checking Status\"]\n    C{Complete?}\n    A --> B\n    B --> C\n    C -->|No| B\n    C -->|Yes| A"
+      },
+      {
+        "description": "Parallel processes",
+        "accuracy": 50.0,
+        "matched_patterns": 2,
+        "total_patterns": 4,
+        "output": "graph TD\n    A[\"System Simultaneously\"]\n    C[\"Process 1\"]\n    A --> C\n    D[\"Process 2\"]\n    A --> D\n    B[\"Complete\"]\n    C --> B\n    D --> B"
+      },
+      {
+        "description": "Multiple conditions with AND",
+        "accuracy": 100.0,
+        "matched_patterns": 8,
+        "total_patterns": 8,
+        "output": "graph TD\n    A[\"Shopping Checkout\"]\n    B{Logged In & Has Items}\n    C[\"Proceed To Payment\"]\n    D[\"Redirect To Cart\"]\n    A --> B\n    B -->|Yes| C\n    B -->|No| D"
+      },
+      {
+        "description": "Process with error handling",
+        "accuracy": 100.0,
+        "matched_patterns": 8,
+        "total_patterns": 8,
+        "output": "graph TD\n    A[\"Data Import Process Checks Fil\"]\n    B{Valid?}\n    C[\"Import Data\"]\n    D[\"Log Error And Notify Admin\"]\n    A --> B\n    B -->|Yes| C\n    B -->|No| D"
+      },
+      {
+        "description": "Complex workflow with multiple steps",
+        "accuracy": 88.89,
+        "matched_patterns": 8,
+        "total_patterns": 9,
+        "output": "graph TD\n    A[\"Ticket Processing\"]\n    B{High?}\n    A --> B\n    C[\"Assign Immediately\"]\n    B -->|Yes| C\n    D[\"Notify Manager\"]\n    C -->|Yes| D\n    E{Low?}\n    B -->|No| E\n    F[\"Queue For\"]\n    E -->|Yes| F\n    G[\"Handle Alternative Failure\"]\n    E -->|No| G"
+      },
+      {
+        "description": "While loop pattern",
+        "accuracy": 50.0,
+        "matched_patterns": 3,
+        "total_patterns": 6,
+        "output": "graph TD\n    A[\"While There Are Unprocessed It\"]\n    B[\"Process The Next Item\"]\n    A --> B"
+      },
+      {
+        "description": "Nested decisions",
+        "accuracy": 77.78,
+        "matched_patterns": 7,
+        "total_patterns": 9,
+        "output": "graph TD\n    A[\"Login Process Checks Username\"]\n    B{Valid?}\n    C[\"Check Password If Password Cor\"]\n    D[\"Lock Account Else Show Usernam\"]\n    A --> B\n    B -->|Yes| C\n    B -->|No| D"
+      }
+    ]
+  }
+}

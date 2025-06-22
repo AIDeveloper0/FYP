@@ -1,0 +1,29 @@
+{
+  "examples": [
+    {
+      "name": "User Registration",
+      "description": "User registration process where system collects user information if validation successful then create account and send welcome email else show error message",
+      "diagram_type": "flowchart"
+    },
+    {
+      "name": "Payment Processing",
+      "description": "Online payment processing system where customer submits payment if credit card valid and sufficient funds then process transaction and send confirmation if card invalid or insufficient funds then display error and request alternative payment",
+      "diagram_type": "flowchart"
+    },
+    {
+      "name": "Data Processing",
+      "description": "First collect the input data, then validate the data format, next transform the data to proper format, finally save results to database",
+      "diagram_type": "flowchart"
+    },
+    {
+      "name": "Login System",
+      "description": "User login system if credentials valid then grant access to dashboard else show error message and allow retry",
+      "diagram_type": "flowchart"
+    },
+    {
+      "name": "Order Fulfillment",
+      "description": "E-commerce order fulfillment where order is received if items in stock then prepare shipment and notify customer if items out of stock then create backorder and notify customer about delay",
+      "diagram_type": "flowchart"
+    }
+  ]
+}

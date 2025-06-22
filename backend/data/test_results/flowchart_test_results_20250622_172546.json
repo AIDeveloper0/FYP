@@ -1,0 +1,1189 @@
+{
+  "timestamp": "2025-06-22 17:25:45",
+  "total_tests": 46,
+  "successful_tests": 0,
+  "failed_tests": 46,
+  "test_results": [
+    {
+      "description": "Simple decision flow",
+      "input": "User login if credentials valid then grant access else show error",
+      "expected_patterns": [
+        "graph TD",
+        "Valid?",
+        "Grant Access",
+        "Error",
+        "Yes",
+        "No"
+      ],
+      "matched_patterns": [
+        "graph TD",
+        "No"
+      ],
+      "missing_patterns": [
+        "Valid?",
+        "Grant Access",
+        "Error",
+        "Yes"
+      ],
+      "accuracy": 33.33333333333333,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"User login if credentials valid\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Payment verification",
+      "input": "Verify payment if payment successful then process order else reject transaction",
+      "expected_patterns": [
+        "graph TD",
+        "Successful?",
+        "Process Order",
+        "Reject",
+        "Yes",
+        "No"
+      ],
+      "matched_patterns": [
+        "graph TD",
+        "No"
+      ],
+      "missing_patterns": [
+        "Successful?",
+        "Process Order",
+        "Reject",
+        "Yes"
+      ],
+      "accuracy": 33.33333333333333,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"process order else reject transaction\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Email verification",
+      "input": "Check email if email exists then send verification code else show registration form",
+      "expected_patterns": [
+        "graph TD",
+        "Exists?",
+        "Verification",
+        "Registration",
+        "Yes",
+        "No"
+      ],
+      "matched_patterns": [
+        "graph TD",
+        "No"
+      ],
+      "missing_patterns": [
+        "Exists?",
+        "Verification",
+        "Registration",
+        "Yes"
+      ],
+      "accuracy": 33.33333333333333,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Check email if email exists\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Data validation",
+      "input": "Validate input if data format correct then process data else show validation error",
+      "expected_patterns": [
+        "graph TD",
+        "Correct?",
+        "Process",
+        "Error",
+        "Yes",
+        "No"
+      ],
+      "matched_patterns": [
+        "graph TD",
+        "No"
+      ],
+      "missing_patterns": [
+        "Correct?",
+        "Process",
+        "Error",
+        "Yes"
+      ],
+      "accuracy": 33.33333333333333,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"process data else show validation error\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Resource availability check",
+      "input": "Check resources if resources available then allocate resources else queue request",
+      "expected_patterns": [
+        "graph TD",
+        "Available?",
+        "Allocate",
+        "Queue",
+        "Yes",
+        "No"
+      ],
+      "matched_patterns": [
+        "graph TD",
+        "No"
+      ],
+      "missing_patterns": [
+        "Available?",
+        "Allocate",
+        "Queue",
+        "Yes"
+      ],
+      "accuracy": 33.33333333333333,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Check resources if resources available\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Account status check",
+      "input": "Check account if account active then allow transaction else notify user to activate",
+      "expected_patterns": [
+        "graph TD",
+        "Active?",
+        "Allow",
+        "Notify",
+        "Yes",
+        "No"
+      ],
+      "matched_patterns": [
+        "graph TD",
+        "No"
+      ],
+      "missing_patterns": [
+        "Active?",
+        "Allow",
+        "Notify",
+        "Yes"
+      ],
+      "accuracy": 33.33333333333333,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Check account if account active\"]\n    step2[\"allow transaction else notify user to activate\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> step2\n    step2 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "File check",
+      "input": "Examine file if file exists then open file else show file missing error",
+      "expected_patterns": [
+        "graph TD",
+        "Exists?",
+        "Open",
+        "Missing",
+        "Yes",
+        "No"
+      ],
+      "matched_patterns": [
+        "graph TD",
+        "No"
+      ],
+      "missing_patterns": [
+        "Exists?",
+        "Open",
+        "Missing",
+        "Yes"
+      ],
+      "accuracy": 33.33333333333333,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Examine file if file exists then open file else show file missing error\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Connection check",
+      "input": "Test connection if network connected then sync data else store locally",
+      "expected_patterns": [
+        "graph TD",
+        "Connected?",
+        "Sync",
+        "Store",
+        "Yes",
+        "No"
+      ],
+      "matched_patterns": [
+        "graph TD",
+        "No"
+      ],
+      "missing_patterns": [
+        "Connected?",
+        "Sync",
+        "Store",
+        "Yes"
+      ],
+      "accuracy": 33.33333333333333,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Test connection if network connected then sync data else store locally\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Password strength check",
+      "input": "Validate password if password strong then accept password else request stronger password",
+      "expected_patterns": [
+        "graph TD",
+        "Strong?",
+        "Accept",
+        "Request",
+        "Yes",
+        "No"
+      ],
+      "matched_patterns": [
+        "graph TD",
+        "No"
+      ],
+      "missing_patterns": [
+        "Strong?",
+        "Accept",
+        "Request",
+        "Yes"
+      ],
+      "accuracy": 33.33333333333333,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Validate password if password strong then accept password else request stronger password\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Age verification",
+      "input": "Verify age if user over 18 then allow access else show age restriction",
+      "expected_patterns": [
+        "graph TD",
+        "User Over 18?",
+        "Allow",
+        "Restriction",
+        "Yes",
+        "No"
+      ],
+      "matched_patterns": [
+        "graph TD",
+        "No"
+      ],
+      "missing_patterns": [
+        "User Over 18?",
+        "Allow",
+        "Restriction",
+        "Yes"
+      ],
+      "accuracy": 33.33333333333333,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Verify age if user over 18\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Inventory check",
+      "input": "Check inventory if product in stock then add to cart else show out of stock message",
+      "expected_patterns": [
+        "graph TD",
+        "In Stock?",
+        "Add To Cart",
+        "Out Of Stock",
+        "Yes",
+        "No"
+      ],
+      "matched_patterns": [
+        "graph TD",
+        "No"
+      ],
+      "missing_patterns": [
+        "In Stock?",
+        "Add To Cart",
+        "Out Of Stock",
+        "Yes"
+      ],
+      "accuracy": 33.33333333333333,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Check inventory if product in stock\"]\n    step2[\"add to cart else show out of stock message\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> step2\n    step2 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Weather-based decision",
+      "input": "Check weather if raining then move event indoors else continue with outdoor setup",
+      "expected_patterns": [
+        "graph TD",
+        "Raining?",
+        "Indoors",
+        "Outdoor",
+        "Yes",
+        "No"
+      ],
+      "matched_patterns": [
+        "graph TD",
+        "No"
+      ],
+      "missing_patterns": [
+        "Raining?",
+        "Indoors",
+        "Outdoor",
+        "Yes"
+      ],
+      "accuracy": 33.33333333333333,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Check weather if raining\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Basic sequence",
+      "input": "First collect data, then validate input, finally save to database",
+      "expected_patterns": [
+        "graph TD",
+        "Collect Data",
+        "Validate",
+        "Save"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Collect Data",
+        "Validate",
+        "Save"
+      ],
+      "accuracy": 25.0,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"collect data\"]\n    step2[\"validate input\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> step2\n    step2 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Registration sequence",
+      "input": "Enter user details, validate email, send verification link, activate account",
+      "expected_patterns": [
+        "graph TD",
+        "Enter User",
+        "Validate",
+        "Send",
+        "Activate"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Enter User",
+        "Validate",
+        "Send",
+        "Activate"
+      ],
+      "accuracy": 20.0,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"enter details\"]\n    step2[\"send link\"]\n    step3[\"activate account\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> step2\n    step2 --> step3\n    step3 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Order processing sequence",
+      "input": "Customer places order, system validates payment, warehouse prepares shipment, courier delivers package",
+      "expected_patterns": [
+        "graph TD",
+        "Customer Places",
+        "Validates Payment",
+        "Warehouse",
+        "Courier"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Customer Places",
+        "Validates Payment",
+        "Warehouse",
+        "Courier"
+      ],
+      "accuracy": 20.0,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"validate payment\"]\n    step2[\"prepare shipment\"]\n    step3[\"deliver package\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> step2\n    step2 --> step3\n    step3 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Support ticket sequence",
+      "input": "Customer reports issue, system creates ticket, agent reviews problem, technician resolves issue, customer confirms resolution",
+      "expected_patterns": [
+        "graph TD",
+        "Reports",
+        "Creates",
+        "Reviews",
+        "Resolves",
+        "Confirms"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Reports",
+        "Creates",
+        "Reviews",
+        "Resolves",
+        "Confirms"
+      ],
+      "accuracy": 16.666666666666664,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"report issue\"]\n    step2[\"create ticket\"]\n    step3[\"resolve issue\"]\n    step4[\"confirm resolution\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> step2\n    step2 --> step3\n    step3 --> step4\n    step4 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Software deployment",
+      "input": "Build code, run tests, deploy to staging, perform QA, deploy to production",
+      "expected_patterns": [
+        "graph TD",
+        "Build",
+        "Tests",
+        "Staging",
+        "QA",
+        "Production"
+      ],
+      "matched_patterns": [
+        "graph TD",
+        "QA"
+      ],
+      "missing_patterns": [
+        "Build",
+        "Tests",
+        "Staging",
+        "Production"
+      ],
+      "accuracy": 33.33333333333333,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"run tests\"]\n    step2[\"perform QA\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> step2\n    step2 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Recipe steps",
+      "input": "Prepare ingredients, mix batter, pour into pan, bake at 350 degrees, cool before serving",
+      "expected_patterns": [
+        "graph TD",
+        "Prepare",
+        "Mix",
+        "Pour",
+        "Bake",
+        "Cool"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Prepare",
+        "Mix",
+        "Pour",
+        "Bake",
+        "Cool"
+      ],
+      "accuracy": 16.666666666666664,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"prepare ingredients\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Morning routine",
+      "input": "Wake up, brush teeth, take shower, get dressed, eat breakfast, leave for work",
+      "expected_patterns": [
+        "graph TD",
+        "Wake",
+        "Brush",
+        "Shower",
+        "Dressed",
+        "Breakfast",
+        "Leave"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Wake",
+        "Brush",
+        "Shower",
+        "Dressed",
+        "Breakfast",
+        "Leave"
+      ],
+      "accuracy": 14.285714285714285,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"eat breakfast\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Email campaign",
+      "input": "Create email content, design template, build recipient list, send campaign, analyze results",
+      "expected_patterns": [
+        "graph TD",
+        "Create",
+        "Design",
+        "Build",
+        "Send",
+        "Analyze"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Create",
+        "Design",
+        "Build",
+        "Send",
+        "Analyze"
+      ],
+      "accuracy": 16.666666666666664,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"create content\"]\n    step2[\"build list\"]\n    step3[\"send campaign\"]\n    step4[\"analyze results\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> step2\n    step2 --> step3\n    step3 --> step4\n    step4 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Nested login verification",
+      "input": "Login process checks username if valid then check password if password correct then grant access else lock account else show username error",
+      "expected_patterns": [
+        "graph TD",
+        "Username",
+        "Valid",
+        "Password",
+        "Correct",
+        "Grant Access",
+        "Lock Account",
+        "Error"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Username",
+        "Valid",
+        "Password",
+        "Correct",
+        "Grant Access",
+        "Lock Account",
+        "Error"
+      ],
+      "accuracy": 12.5,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Login process checks username if valid\"]\n    step2[\"check password if password correct\"]\n    step3[\"grant access else lock account else show username error\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> step2\n    step2 --> step3\n    step3 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Payment processing with validation",
+      "input": "Order processing system where customer places order if payment successful then validate inventory if items available then ship product else backorder items if payment failed then notify customer",
+      "expected_patterns": [
+        "graph TD",
+        "Order Processing",
+        "Payment",
+        "Successful",
+        "Inventory",
+        "Available",
+        "Ship",
+        "Backorder",
+        "Notify"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Order Processing",
+        "Payment",
+        "Successful",
+        "Inventory",
+        "Available",
+        "Ship",
+        "Backorder",
+        "Notify"
+      ],
+      "accuracy": 11.11111111111111,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Order processing system where customer places order if payment successful\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "File processing with format check",
+      "input": "File processing system checks file type if supported then verify contents if contents valid then process data else log format error if file type not supported then reject file",
+      "expected_patterns": [
+        "graph TD",
+        "File",
+        "Supported",
+        "Contents",
+        "Valid",
+        "Process",
+        "Format Error",
+        "Reject"
+      ],
+      "matched_patterns": [
+        "graph TD",
+        "File"
+      ],
+      "missing_patterns": [
+        "Supported",
+        "Contents",
+        "Valid",
+        "Process",
+        "Format Error",
+        "Reject"
+      ],
+      "accuracy": 25.0,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"File processing system checks file type if supported\"]\n    step2[\"process data else log format error if file type not supported\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> step2\n    step2 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "User registration with email verification",
+      "input": "Registration system validates email if email valid then check if account exists if account not found then create account else show existing account message if email invalid then show format error",
+      "expected_patterns": [
+        "graph TD",
+        "Email",
+        "Valid",
+        "Account",
+        "Create",
+        "Existing",
+        "Format Error"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Email",
+        "Valid",
+        "Account",
+        "Create",
+        "Existing",
+        "Format Error"
+      ],
+      "accuracy": 14.285714285714285,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"check if account exists if account not found\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Product order with discount",
+      "input": "Order system calculates total if customer is member then check purchase history if frequent buyer then apply special discount else apply standard discount if not a member then use regular pricing",
+      "expected_patterns": [
+        "graph TD",
+        "Member",
+        "Purchase History",
+        "Special Discount",
+        "Standard Discount",
+        "Regular Pricing"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Member",
+        "Purchase History",
+        "Special Discount",
+        "Standard Discount",
+        "Regular Pricing"
+      ],
+      "accuracy": 16.666666666666664,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"check purchase history if frequent buyer\"]\n    step2[\"use regular pricing\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> step2\n    step2 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Basic loop",
+      "input": "Repeat checking status until task is complete",
+      "expected_patterns": [
+        "graph TD",
+        "Status",
+        "Complete",
+        "No",
+        "Yes"
+      ],
+      "matched_patterns": [
+        "graph TD",
+        "No"
+      ],
+      "missing_patterns": [
+        "Status",
+        "Complete",
+        "Yes"
+      ],
+      "accuracy": 40.0,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Repeat checking status until task is complete\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Item processing loop",
+      "input": "While there are unprocessed items, process the next item",
+      "expected_patterns": [
+        "graph TD",
+        "Unprocessed Items",
+        "Process",
+        "Next Item",
+        "Yes",
+        "No"
+      ],
+      "matched_patterns": [
+        "graph TD",
+        "No"
+      ],
+      "missing_patterns": [
+        "Unprocessed Items",
+        "Process",
+        "Next Item",
+        "Yes"
+      ],
+      "accuracy": 33.33333333333333,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"process next item\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "File read loop",
+      "input": "Continue reading file content until end of file is reached",
+      "expected_patterns": [
+        "graph TD",
+        "End Of File",
+        "Reading",
+        "Content",
+        "Yes",
+        "No"
+      ],
+      "matched_patterns": [
+        "graph TD",
+        "No"
+      ],
+      "missing_patterns": [
+        "End Of File",
+        "Reading",
+        "Content",
+        "Yes"
+      ],
+      "accuracy": 33.33333333333333,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"read content\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Data validation loop",
+      "input": "Repeat input prompt until user enters valid data",
+      "expected_patterns": [
+        "graph TD",
+        "Valid Data",
+        "Input Prompt",
+        "User Enters",
+        "Yes",
+        "No"
+      ],
+      "matched_patterns": [
+        "graph TD",
+        "No"
+      ],
+      "missing_patterns": [
+        "Valid Data",
+        "Input Prompt",
+        "User Enters",
+        "Yes"
+      ],
+      "accuracy": 33.33333333333333,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"repeat prompt\"]\n    step2[\"enter valid data\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> step2\n    step2 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Multiple AND conditions",
+      "input": "Shopping checkout if customer is logged in and has items in cart then proceed to payment else redirect to cart",
+      "expected_patterns": [
+        "graph TD",
+        "Shopping Checkout",
+        "Logged In",
+        "Items",
+        "Proceed",
+        "Redirect"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Shopping Checkout",
+        "Logged In",
+        "Items",
+        "Proceed",
+        "Redirect"
+      ],
+      "accuracy": 16.666666666666664,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Shopping checkout if customer is logged in\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Multiple OR conditions",
+      "input": "Alert system if temperature too high or pressure exceeds limit then trigger alarm else continue monitoring",
+      "expected_patterns": [
+        "graph TD",
+        "Alert System",
+        "Temperature",
+        "Pressure",
+        "Alarm",
+        "Monitoring"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Alert System",
+        "Temperature",
+        "Pressure",
+        "Alarm",
+        "Monitoring"
+      ],
+      "accuracy": 16.666666666666664,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Alert system if temperature too high or pressure exceeds limit then trigger alarm else continue monitoring\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Basic parallel process",
+      "input": "System simultaneously processes payment and validates inventory",
+      "expected_patterns": [
+        "graph TD",
+        "System",
+        "Payment",
+        "Inventory"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "System",
+        "Payment",
+        "Inventory"
+      ],
+      "accuracy": 25.0,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"process payment\"]\n    step2[\"validate inventory\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> step2\n    step2 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Multiple validations",
+      "input": "Application concurrently validates user credentials and checks system permissions",
+      "expected_patterns": [
+        "graph TD",
+        "Application",
+        "Credentials",
+        "Permissions"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Application",
+        "Credentials",
+        "Permissions"
+      ],
+      "accuracy": 25.0,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"validate credentials\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Parallel data processing",
+      "input": "Server processes incoming requests while monitoring system resources",
+      "expected_patterns": [
+        "graph TD",
+        "Server",
+        "Incoming Requests",
+        "System Resources"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Server",
+        "Incoming Requests",
+        "System Resources"
+      ],
+      "accuracy": 25.0,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"process incoming requests\"]\n    step2[\"monitor resources\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> step2\n    step2 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Simultaneous operations",
+      "input": "Database performs backup while handling user queries",
+      "expected_patterns": [
+        "graph TD",
+        "Database",
+        "Backup",
+        "User Queries"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Database",
+        "Backup",
+        "User Queries"
+      ],
+      "accuracy": 25.0,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"handle queries\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Basic error handling",
+      "input": "Data import process checks file format if valid then import data else log error and notify admin",
+      "expected_patterns": [
+        "graph TD",
+        "Data Import",
+        "Valid",
+        "Import Data",
+        "Log Error",
+        "Notify Admin"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Data Import",
+        "Valid",
+        "Import Data",
+        "Log Error",
+        "Notify Admin"
+      ],
+      "accuracy": 16.666666666666664,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Data import process checks file format if valid\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Connection error handling",
+      "input": "Network service attempts connection if successful then transfer data else retry connection and log failure",
+      "expected_patterns": [
+        "graph TD",
+        "Network Service",
+        "Connection",
+        "Successful",
+        "Transfer",
+        "Retry",
+        "Log Failure"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Network Service",
+        "Connection",
+        "Successful",
+        "Transfer",
+        "Retry",
+        "Log Failure"
+      ],
+      "accuracy": 14.285714285714285,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Network service attempts connection if successful then transfer data else retry connection\"]\n    step2[\"log failure\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> step2\n    step2 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Transaction error handling",
+      "input": "Payment processor executes transaction if successful then confirm order else reverse charges and display error",
+      "expected_patterns": [
+        "graph TD",
+        "Payment Processor",
+        "Transaction",
+        "Successful",
+        "Confirm",
+        "Reverse",
+        "Error"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Payment Processor",
+        "Transaction",
+        "Successful",
+        "Confirm",
+        "Reverse",
+        "Error"
+      ],
+      "accuracy": 14.285714285714285,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Payment processor executes transaction if successful\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Form validation error handling",
+      "input": "Submit form if all fields valid then process submission else highlight errors and keep form data",
+      "expected_patterns": [
+        "graph TD",
+        "Submit Form",
+        "Fields Valid",
+        "Process",
+        "Highlight Errors",
+        "Form Data"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Submit Form",
+        "Fields Valid",
+        "Process",
+        "Highlight Errors",
+        "Form Data"
+      ],
+      "accuracy": 16.666666666666664,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Submit form if all fields valid\"]\n    step2[\"process submission else highlight errors\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> step2\n    step2 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Real world login flow",
+      "input": "User enters credentials, system validates username and password, if both are correct then generate session token and redirect to dashboard, if username exists but password is wrong then show invalid password message, if username doesn't exist then show user not found error",
+      "expected_patterns": [
+        "graph TD",
+        "Credentials",
+        "Validates",
+        "Correct",
+        "Session",
+        "Dashboard",
+        "Invalid",
+        "Not Found"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Credentials",
+        "Validates",
+        "Correct",
+        "Session",
+        "Dashboard",
+        "Invalid",
+        "Not Found"
+      ],
+      "accuracy": 12.5,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"User enters credentials\"]\n    step2[\"system validates username\"]\n    step3[\"if username exists but password is wrong\"]\n    step4[\"if username doesn't exist\"]\n    step5[\"show user not found error\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> step2\n    step2 --> step3\n    step3 --> step4\n    step4 --> step5\n    step5 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "E-commerce checkout flow",
+      "input": "Customer adds items to cart, then proceeds to checkout, enters shipping details, selects payment method, if payment approved then complete order and send confirmation email else show payment error",
+      "expected_patterns": [
+        "graph TD",
+        "Items",
+        "Checkout",
+        "Shipping",
+        "Payment",
+        "Approved",
+        "Complete",
+        "Confirmation",
+        "Error"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Items",
+        "Checkout",
+        "Shipping",
+        "Payment",
+        "Approved",
+        "Complete",
+        "Confirmation",
+        "Error"
+      ],
+      "accuracy": 11.11111111111111,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Customer adds items to cart\"]\n    step2[\"then proceeds to checkout\"]\n    step3[\"enters shipping details\"]\n    step4[\"selects payment method\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> step2\n    step2 --> step3\n    step3 --> step4\n    step4 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Software deployment workflow",
+      "input": "Developer commits code, CI system runs tests, if tests pass then build artifact, deploy to staging, conduct UAT, if UAT passes then deploy to production else fix issues and restart process",
+      "expected_patterns": [
+        "graph TD",
+        "Commits",
+        "Tests",
+        "Build",
+        "Staging",
+        "UAT",
+        "Production",
+        "Fix"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Commits",
+        "Tests",
+        "Build",
+        "Staging",
+        "UAT",
+        "Production",
+        "Fix"
+      ],
+      "accuracy": 12.5,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"restart process\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Returns processing",
+      "input": "Customer initiates return, system validates return eligibility, if eligible then generate return label, customer ships item, warehouse receives item, if item condition acceptable then process refund else deny return",
+      "expected_patterns": [
+        "graph TD",
+        "Initiates",
+        "Validates",
+        "Eligible",
+        "Return Label",
+        "Ships",
+        "Receives",
+        "Condition",
+        "Refund",
+        "Deny"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Initiates",
+        "Validates",
+        "Eligible",
+        "Return Label",
+        "Ships",
+        "Receives",
+        "Condition",
+        "Refund",
+        "Deny"
+      ],
+      "accuracy": 10.0,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"process refund else deny return\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Multiple conditions with logical operators",
+      "input": "Flight booking system checks if seats available and date is valid. If both conditions are met, proceed with reservation. Otherwise, show appropriate error message.",
+      "expected_patterns": [
+        "graph TD",
+        "Flight Booking",
+        "Seats Available",
+        "Date Valid",
+        "Proceed",
+        "Error"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Flight Booking",
+        "Seats Available",
+        "Date Valid",
+        "Proceed",
+        "Error"
+      ],
+      "accuracy": 16.666666666666664,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Flight booking system checks if seats available\"]\n    decision2{\"Is both conditions are met?\"}\n    then3[\"proceed with reservation\"]\n    else4[\"show appropriate error message\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> decision2\n    decision2 -->|Yes| then3\n    decision2 -->|No| else4\n    then3 --> endNode\n    else4 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Hierarchical process with nested decisions",
+      "input": "Project approval system checks budget. If under threshold, team lead approves. If over threshold but under limit, manager approves. If over limit, executive approval required.",
+      "expected_patterns": [
+        "graph TD",
+        "Project Approval",
+        "Budget",
+        "Threshold",
+        "Team Lead",
+        "Manager",
+        "Executive"
+      ],
+      "matched_patterns": [
+        "graph TD"
+      ],
+      "missing_patterns": [
+        "Project Approval",
+        "Budget",
+        "Threshold",
+        "Team Lead",
+        "Manager",
+        "Executive"
+      ],
+      "accuracy": 14.285714285714285,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Project approval system checks budget.\"]\n    decision2{\"Is If under threshold, team lead approves.?\"}\n    then3[\"Process\"]\n    else4[\"Alternative\"]\n    decision5{\"Is If over threshold but under limit, manager approves.?\"}\n    then6[\"Process\"]\n    else7[\"Alternative\"]\n    decision8{\"Is If over limit, executive approval required.?\"}\n    then9[\"Process\"]\n    else10[\"Alternative\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> decision2\n    decision2 -->|Yes| then3\n    decision2 -->|No| else4\n    decision5 -->|Yes| then6\n    decision5 -->|No| else7\n    decision8 -->|Yes| then9\n    decision8 -->|No| else10\n    then9 --> endNode\n    else10 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    },
+    {
+      "description": "Large documentation process",
+      "input": "Document management process: Author creates draft, peers review document, if changes needed then author revises draft else if approved then editor formats document, quality team performs final check, if passes final check then publish document else return to editor",
+      "expected_patterns": [
+        "graph TD",
+        "Author",
+        "Draft",
+        "Review",
+        "Changes",
+        "Revises",
+        "Editor",
+        "Formats",
+        "Quality",
+        "Final Check",
+        "Publish"
+      ],
+      "matched_patterns": [
+        "graph TD",
+        "Author"
+      ],
+      "missing_patterns": [
+        "Draft",
+        "Review",
+        "Changes",
+        "Revises",
+        "Editor",
+        "Formats",
+        "Quality",
+        "Final Check",
+        "Publish"
+      ],
+      "accuracy": 18.181818181818183,
+      "passed": false,
+      "mermaid": "graph TD\n    start[\"Start\"]\n    step1[\"Document management process: Author creates draft\"]\n    step2[\"quality team performs final check\"]\n    step3[\"if passes final check\"]\n    endNode[\"End\"]\n    start --> step1\n    step1 --> step2\n    step2 --> step3\n    step3 --> endNode\n\n    classDef default fill:#f9f9f9,stroke:#333,stroke-width:2px\n    classDef startEnd fill:#e8f5e8,stroke:#4caf50,stroke-width:2px"
+    }
+  ],
+  "execution_time": 0.6781811714172363
+}

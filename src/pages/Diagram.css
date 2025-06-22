@@ -1,0 +1,504 @@
+/* Header - Extremely Light Blue Gradient */
+.header {
+  width: 100vw; /* Full viewport width */
+  max-width: 100%; /* Prevent horizontal scrollbar */
+  background: linear-gradient(to right, #c1e1f7, #e9f7fc, #c1e1f7); /* Extremely light blue gradient */
+  border-bottom: 1px solid #d8edf7;
+  padding: 1rem 2rem;
+  position: relative;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #2c3e50; /* Keep dark text for contrast */
+}
+
+.header-content {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Footer - Matching Extremely Light Blue Gradient */
+.footer {
+  width: 100vw; /* Full viewport width */
+  max-width: 100%; /* Prevent horizontal scrollbar */
+  background: linear-gradient(to right, #c1e1f7, #e9f7fc, #c1e1f7); /* Extremely light blue gradient */
+  border-top: 1px solid #d8edf7;
+  padding: 1.5rem 2rem;
+  margin-top: auto; /* Push to bottom */
+  position: relative;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  color: #2c3e50; /* Keep dark text for contrast */
+}
+
+.footer-content {
+  width: 100%;
+  max-width: 1600px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column; /* Change to column for stacked layout */
+  align-items: center; /* Center all items */
+}
+
+/* Copyright text container */
+.footer-copyright {
+  order: 1;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+/* Contact Us link in footer - move to new line */
+.footer-contact-link {
+  width: 100%;
+  margin-top: 0.5rem;
+  text-align: center;
+  order: 2; /* Push to appear after copyright */
+}
+
+/* Apply to any navigation or link groups in the footer */
+.footer-links, 
+.footer-nav {
+  order: 1; /* Keep other footer content on first line */
+}
+
+/* Update page layout to work with full-width header/footer */
+.diagram-page {
+  min-height: 100vh;
+  background: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-top: 0; /* Remove top padding */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+/* Container for main content */
+.main-content {
+  width: 100%;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.diagram-menu {
+  display: flex;
+  gap: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.diagram-menu-item {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.7rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.diagram-menu-item.active,
+.diagram-menu-item:hover,
+.diagram-menu-item:focus {
+  background: #2980b9;
+  outline: none;
+}
+
+.diagram-interface {
+  display: grid;
+  grid-template-columns: minmax(300px, 1fr) minmax(500px, 2fr);
+  gap: 20px;
+  width: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.diagram-input {
+  width: 100%;
+  max-width: 600px;
+  padding: 2rem 1rem;
+  border-right: 1px solid #e0e0e0;
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+}
+
+.diagram-input label {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.diagram-input textarea {
+  width: 100%;
+  min-height: 120px;
+  padding: 12px;
+  font-size: 16px;
+  border: 1.5px solid #ddd;
+  border-radius: 6px;
+  resize: vertical;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 1.4;
+}
+
+.diagram-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 500px;
+  width: 100%;
+  overflow: auto;
+}
+
+.diagram-display {
+  height: 100%;
+  min-height: 500px;
+  overflow: auto;
+}
+
+.diagram-placeholder {
+  width: 100%;
+  text-align: center;
+  color: #7f8c8d;
+}
+
+.diagram-content {
+  width: 100%;
+  max-width: 900px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  padding: 2rem;
+  text-align: center;
+}
+
+/* Submit Button Styles */
+.submit-button {
+  margin-top: 1rem;
+  padding: 0.8rem 1.5rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Center button styles */
+  align-self: center;
+  width: 60%;
+  max-width: 200px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.submit-button:hover {
+  background-color: #2980b9;
+}
+
+/* Form centering */
+.diagram-input form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Export Button Styles */
+.export-button {
+  background-color: #f1f1f1;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  margin: 1rem 0;
+}
+
+.export-button:hover {
+  background-color: #e2e2e2;
+}
+
+.export-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Mermaid Container */
+.mermaid-container {
+  width: 100%;
+  margin: 20px 0;
+  overflow: auto;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Error Message */
+.error-message {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+  padding: 12px;
+  border-radius: 5px;
+  margin-top: 10px;
+  white-space: pre-line; /* Preserve line breaks */
+}
+
+/* Fallback Error Styles */
+.error-fallback {
+  padding: 1rem;
+  border: 2px dashed #e74c3c;
+  border-radius: 8px;
+  background: #fdf2f2;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.error-fallback p {
+  color: #c0392b;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.error-fallback details {
+  text-align: left;
+  background: white;
+  padding: 1rem;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+.error-fallback pre {
+  background: #f8f9fa;
+  padding: 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  overflow-x: auto;
+  white-space: pre-wrap;
+}
+
+.mermaid-container svg {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Top menu export controls */
+.menu-export-controls {
+  display: flex;
+  gap: 0.5rem;
+  margin-left: auto; /* Push to the right side */
+}
+
+/* Export Menu Button */
+.export-menu-button {
+  background: #e74c3c;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.7rem 1.2rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.export-menu-button:hover {
+  background: #c0392b;
+}
+
+.export-menu-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* DSL Code Section Styles */
+.dsl-code-section {
+  margin-top: 1.5rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  background: #fafafa;
+  overflow: hidden;
+}
+
+.dsl-code-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: linear-gradient(to right, #c1e1f7, #e9f7fc, #c1e1f7);
+  border-bottom: 1px solid #d8edf7;
+}
+
+.dsl-code-header h4 {
+  margin: 0;
+  color: #2c3e50;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.dsl-controls {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.toggle-dsl-button {
+  background: #3498db;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.toggle-dsl-button:hover {
+  background: #2980b9;
+}
+
+.copy-dsl-button {
+  background: #27ae60;
+  color: white;
+  border: none;
+  padding: 0.5rem 0.8rem;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.copy-dsl-button:hover {
+  background: #229954;
+}
+
+.dsl-code-container {
+  padding: 1rem;
+  background: white;
+  border-top: 1px solid #e0e0e0;
+}
+
+.dsl-code-display {
+  background: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  padding: 1rem;
+  margin: 0;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #2c3e50;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+.dsl-code-display code {
+  background: none;
+  padding: 0;
+  font-family: inherit;
+  color: inherit;
+}
+
+/* Add these styles to your existing diagram.css */
+
+.input-analysis {
+  margin-top: 10px;
+  padding: 10px;
+  background-color: #f8f9fa;
+  border-radius: 5px;
+  border: 1px solid #e9ecef;
+}
+
+.input-stats {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 8px;
+  font-size: 12px;
+  color: #6c757d;
+}
+
+.input-stats span {
+  padding: 2px 6px;
+  background-color: #e9ecef;
+  border-radius: 3px;
+}
+
+.input-warning {
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.input-warning.info {
+  background-color: #d1ecf1;
+  border: 1px solid #bee5eb;
+  color: #0c5460;
+}
+
+.input-warning.warning {
+  background-color: #fff3cd;
+  border: 1px solid #ffeaa7;
+  color: #856404;
+}
+
+.input-warning.severe {
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+  color: #721c24;
+}
+
+/* Make sure all content respects the box-sizing */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header, .footer {
+    padding: 1rem;
+  }
+  
+  .dsl-code-header {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+  
+  .dsl-controls {
+    width: 100%;
+    justify-content: flex-end;
+  }
+  
+  .dsl-code-display {
+    font-size: 0.8rem;
+  }
+}
